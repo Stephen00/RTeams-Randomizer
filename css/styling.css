@@ -1,0 +1,172 @@
+body {
+    padding:0;
+    margin:0;
+}
+
+/* Global */
+.container {
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+/* Font faces */
+
+@font-face {
+  font-family: 'poppins-bold';
+  src:url("../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'poppins-light';
+  src:url("../fonts/Poppins/Poppins-Light.ttf");
+}
+
+@font-face {
+    font-family: 'poppins-semibold';
+    src:url("../fonts/Poppins/Poppins-SemiBold.ttf")
+}
+
+@font-face {
+    font-family: 'poppins-regular';
+    src:url("../fonts/Poppins/Poppins-Regular.ttf")
+}
+
+
+/* Header */
+header {
+    font-family: poppins-light;
+    background: #1f1f24;
+    color: white;
+    padding: 16px 0 16px 0;
+    min-height: 70px;
+}
+
+header a {
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:16px;
+}
+
+header ul {
+    margin:0;
+    padding:0;
+}
+
+header li {
+    float: left;
+    display:inline;
+    padding: 0 20px 0 20px;
+}
+
+header #navbar {
+    float:left;
+}
+header #navbar h1{
+    margin:0
+}
+
+header nav {
+    float:right;
+    margin-top:10px;
+}
+
+header a:hover {
+    text-decoration: none;
+    color:#e8491d;
+}
+
+header .highlight, header .current a{
+    font-family: 'poppins-bold';
+    color:#ff7061;
+    font-weight:bold;
+}
+
+
+
+/* Showcase Section */
+
+.btn-primary.orange-btn {
+    background-color: #FF6F61;
+    border-color: #FF6F61;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.btn-primary.orange-btn:hover {
+    background:#eb6457;
+    border-color: #eb6457;
+}
+
+#showcase{
+    font-family: 'poppins-light';
+    min-height: 300px;
+    text-align: center;
+    font-size:17px;
+}
+
+#showcase h1 {
+    font-family: 'poppins-semibold';
+    margin-top:50px;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+button {
+    width:250px;
+    height:55px;
+}
+
+#showcase button {
+    margin-top:15px;
+}
+
+/* Example Section */
+
+#Examples {
+
+    background-color: #f0f0f0;
+    text-align: center;
+    min-height: 600px;
+}
+
+#Examples h1 {
+    font-family: 'poppins-regular';
+    margin-top: 50px;
+    font-size:35px;
+}
+
+#Examples .box{
+    float:left;
+    text-align:center;
+    width:30%;
+    padding:10px;
+}
+
+#Examples h3, p {
+    color:#555555;
+}
+
+#Examples button{
+    margin-top:50px;
+}
+#Examples img {
+    margin-bottom:20px;
+    margin-top:50px;
+    width: 100px !important;
+    height: 100px !important;
+}
+
+#Examples img {
+    display:inline-block;
+    border-radius: 60px;
+    box-shadow:0px 0px 8px #888;
+    background-color: #2F3061;
+    padding: 1.2em;
+}
+
+#Examples p {
+    margin-top:20px;
+}
+
