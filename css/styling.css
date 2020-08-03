@@ -170,3 +170,50 @@ button {
     margin-top:20px;
 }
 
+
+/* Randomizer Section */
+
+
+#input-group .btn-primary.orange-btn {
+    width: 180px;
+
+}
+#input-group {
+    min-height:200px;
+    background-color: #f0f0f0;
+}
+
+#input-group .input-group {
+    padding-top:50px;
+}
+
+#input-group #div_mix_title {
+    padding:0;
+    margin:0;
+}
+
+#input-group button {
+    margin-top:32px;
+    width:180px;
+}
+
+#input-group input,button {
+    height:45px;
+}
+
+#input-group input{
+    width:360px;
+}
+
+#input-group input, label {
+    display:block;
+}
+
+#input-group label  {
+    width:180px;
+}
+
+#randomizer_buttons_2 {
+    margin-top:5px;
+}
+
