@@ -176,6 +176,8 @@ button {
 
 #input-group .btn-primary.orange-btn {
     width: 180px;
+    font-family: 'poppins-light';
+    border-radius: 3px;
 
 }
 #input-group {
@@ -195,6 +197,7 @@ button {
 #input-group button {
     margin-top:32px;
     width:180px;
+
 }
 
 #input-group input,button {
@@ -203,6 +206,7 @@ button {
 
 #input-group input{
     width:360px;
+
 }
 
 #input-group input, label {
@@ -213,7 +217,7 @@ button {
     width:180px;
 }
 
-#randomizer_buttons_2 {
-    margin-top:5px;
+#randomizer_button_2, #randomizer_button_3 {
+    margin-top:4px;
 }
 
