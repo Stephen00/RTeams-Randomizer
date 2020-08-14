@@ -221,3 +221,25 @@ button {
     margin-top:4px;
 }
 
+
+/* Table Section */
+
+#table h3 {
+    margin: 30px 0 30px 0;
+    font-family: poppins-light;
+}
+
+#table ol {
+   list-style-position: inside;
+
+}
+
+#table #team1card {
+    margin-bottom:50px;
+}
+
+#table #team1_list, #team2_list {
+    list-style: none;
+}
+
+
