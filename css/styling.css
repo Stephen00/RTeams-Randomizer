@@ -221,6 +221,21 @@ button {
     margin-top:4px;
 }
 
+.slidecontainer{
+    margin-top:5%;
+}
+
+.slidecontainer p {
+    float:left;
+    padding: 10px 40px 0 0;
+}
+
+.slidecontainer #ageOutputId {
+    justify-content: right;
+    float:right;
+
+}
+
 
 /* Table Section */
 
@@ -241,5 +256,9 @@ button {
 #table #team1_list, #team2_list {
     list-style: none;
 }
+
+
+
+
 
 

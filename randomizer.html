@@ -38,10 +38,15 @@
             <div class="col-md-6 mx-auto">
                 <div class="input-group mb-3 justify-content-center text-center">
                     <div id="team_member_title" data-error="The <strong>Title</strong> field should not be blank.">
-                        <label for="memberName">Enter Team Member</label>
+                        <label for="memberName">&zwnj;</label>
                         <input type="text" id="memberName" class="form-control" placeholder="enter name here...">
                      </div>
-                    <button type="button" id="addMemberBtn" onclick="myFunction()" class="btn btn-primary orange-btn">Add Member</button>
+                    <button type="button" id="addMemberBtn" onclick="addToMembers()" class="btn btn-primary orange-btn">Add Member</button>
+                    <div class="slidecontainer">
+                        <p>Skill Level</p>
+                        <input type="range" min="0" max="5" value="0" class="slider" id="skillRange">
+                        <output id="skillOutput">24</output>
+                </div>
                 </div>
             </div>
 
@@ -49,8 +54,8 @@
                 <div class="input-group mb-3 justify-content-center text-center">
                     <div id="randomizer_option" data-error="The <strong>Title</strong> field should not be blank.">
                          <label for="randomizer_buttons">Randomizer Options</label>
-                            <input type="button" id="randomizer_button_1" class="btn btn-primary orange-btn" value="Sort by Skill">
-                            <input type="button" id="randomizer_button_2" class="btn btn-primary orange-btn" value="Randomly Sort">
+                            <input type="button" id="randomizer_button_1" onclick = "randomizeTeam()" class="btn btn-primary orange-btn" value="Randomly Sort">
+                            <input type="button" id="randomizer_button_2" class="btn btn-primary orange-btn" value="Sort by Skill">
                             <input type="button" id="randomizer_button_3" class="btn btn-primary orange-btn" value="Sort by Gender">
                     </div>
                 </div>
@@ -59,13 +64,63 @@
     </div>
 </section>
 
-<section id="list">
-    <ol id="list">
+<section id="table">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto justify-content-center text-center">
+                <div class="list">
+                    <h3>Team Members</h3>
+                    <div class="card" id="teamMembers">
+                        <div class="card-body">
+                             <ol class="list-group list-group-flush" id="list"></ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    </ol>
+            <div class="col-md-6 mx-auto justify-content-center text-center">
+                <div class="list">
+                    <h3>Sorted Teams</h3>
+                    <div class="card" id="team1card" style="display: none">
+                        <div class="card-body">
+                             <ol class="list-group list-group-flush" id="team1_list"></ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list">
+                    <div class="card" id="team2card" style="display: none">
+                        <div class="card-body">
+                             <ol class="list-group list-group-flush" id="team2_list"></ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
+<script>
+    // Allows the input to be submitted through the enter key
+    var input = document.getElementById("memberName");
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("addMemberBtn").click();
+            }
+        });
+
+    var slider = document.getElementById("skillRange");
+    var output = document.getElementById("skillOutput");
+        output.innerHTML = slider.value;
+
+        // Update the current slider value
+        slider.oninput = function() {
+           output.innerHTML = this.value;
+        }
+
+</script>
 
 </body>
 </html>
